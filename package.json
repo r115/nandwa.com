@@ -18,6 +18,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "autoprefixer": "^10.1.0",
     "gatsby": "^2.26.1",
     "gatsby-plugin-image": "^0.3.0",
     "gatsby-plugin-manifest": "^2.8.0",
@@ -29,9 +30,10 @@
     "gatsby-plugin-sitemap": "^2.8.0",
     "gatsby-source-filesystem": "^2.7.0",
     "gatsby-transformer-sharp": "^2.8.0",
-    "postcss": "^8.1.14",
+    "postcss": "^8.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "tailwindcss": "^2.0.1"
   }
 }

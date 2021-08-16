@@ -30,6 +30,7 @@
     "gatsby-plugin-sitemap": "^2.8.0",
     "gatsby-source-filesystem": "^2.7.0",
     "gatsby-transformer-sharp": "^2.8.0",
+    "lodash": "^4.17.21",
     "postcss": "^8.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

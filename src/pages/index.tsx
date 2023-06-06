@@ -2,9 +2,15 @@ import { type NextPage } from "next";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import { api } from "@nandwa/utils/api";
+import { useEffect } from "react";
+import { capture } from "@nandwa/utils/analytics";
 
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
+
+  useEffect(() => {
+    capture("pageview", { url: window.location.pathname });
+  }, []);
 
   return (
     <>

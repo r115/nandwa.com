@@ -5,7 +5,7 @@
   "scripts": {
     "build": "SKIP_ENV_VALIDATION=1 next build",
     "dev": "next dev",
-    "postinstall": "prisma generate",
+    "prima:generate": "prisma generate",
     "db:pull": "prisma db pull",
     "lint": "next lint",
     "start": "next start"

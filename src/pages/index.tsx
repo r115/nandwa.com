@@ -9,7 +9,9 @@ const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
   useEffect(() => {
-    capture("pageview", { url: window.location.pathname });
+    if (window.location.host !== "localhost:3000") {
+      capture("pageview", { url: window.location.pathname });
+    }
   }, []);
 
   return (

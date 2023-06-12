@@ -2,13 +2,9 @@ import { Arango } from '@nandwa/utils/data/arangodb';
 import { aql } from 'arangojs';
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-type ResponseData = {
-    message: string
-}
-
 export default async function handler(
     req: NextApiRequest,
-    res: NextApiResponse<ResponseData>
+    res: NextApiResponse
 ) {
     try {
         let data;

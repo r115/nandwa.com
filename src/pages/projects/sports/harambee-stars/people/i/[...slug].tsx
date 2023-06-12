@@ -23,7 +23,7 @@ function Personell({
     )
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = () => {
     const paths = [
         {
             params: {
@@ -47,7 +47,7 @@ export const getStaticProps: GetStaticProps<{
         slug = params.slug;
     }
 
-    const res = await fetch(`${process.env.BASE_URL}/api/graph?slug=${slug}`)
+    const res = await fetch(`${process.env.BASE_URL}/api/graph?slug=${slug ?? ""}`)
     const person = await res.json()
 
     return { props: { person } }
